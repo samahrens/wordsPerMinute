@@ -68,16 +68,9 @@ def main(stdscr):
     curses.init_pair(3, curses.COLOR_WHITE, curses.COLOR_BLACK)
 
     start_screen(stdscr)
-    print("1")
     while True:
-        print("2")
-
         wpm_test(stdscr)
-        print("3")
-
         stdscr.addstr(2, 0, "You completed the text! Press any key to continue. Press ESC to exit.")
-        print("4")
-
         key = stdscr.getkey()
         if ord(key) == 27:
             break
